@@ -1,0 +1,42 @@
+* {
+    font-size: 7px;
+}
+div {
+    margin: 10px;
+}
+img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+.image-first {
+    border-radius: 5px;
+}
+.image-second {
+    width: 100px;
+    
+}
+.image-third {
+    width: 100px;
+    border-radius: 50%;
+}
+#search-first {
+    width: 100px;
+    border: thin solid black;
+    border-radius: 5px;
+}
+
+#search-second {
+    width: 300px;
+    height: 20px;
+    text-align: left;
+    opacity: 0.3;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15),
+    -1px -1px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+
+#search-second:hover{
+    opacity: 1;
+}
