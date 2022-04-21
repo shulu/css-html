@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+</head>
+<body>
+    <div style="display: flex;flex-direction: row;">
+        <div style="width: 200px;background-color: lightblue;">200px</div>
+        <div style="width: 75px;background-color: lightpink;">75px</div>
+    </div>
+
+    <div style="display: flex;flex-direction: row;margin-top:10px">
+        <div style="width: 200px;background-color: lightblue;">item1</div>
+        <div style="flex:1;background-color: lightpink;">item2</div><div style="width: 75px;background-color: lightblue;">item3</div>
+    </div>
+
+    <div style="
+        display: flex;
+        flex-direction: row;
+        margin-top:10px;
+        justify-content: space-between;
+    ">
+        <div style="background-color: lightpink;">item1</div>
+        <div style="background-color: lightpink;">item2</div>
+        <div style="background-color: lightpink;">item3</div>
+        <div style="background-color: lightpink;">item3</div>
+    </div>
+
+    <div style="
+            display: flex;
+            flex-direction: row;
+            margin-top:10px;
+            height: 50px;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid gray;
+        ">
+        <div style="background-color: lightblue;">item1</div>
+        <div style="background-color: lightpink;">item2</div>
+    </div>
+    <style>
+        .flex-first {
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 5px 10px 5px 10px;
+            font-size: 15px;
+            font-weight: 450;
+        }
+        .count-num {
+            text-align: center;
+            color: white;
+            background-color: blue;
+            min-width: 30px;
+            border: 1px solid white;
+            border-radius: 30%;
+        }
+    </style>
+    <div style="
+        margin-top:10px;
+        width: 350px;
+        border: 1px solid gray;
+        border-radius: 5px;
+    ">
+        <div class="flex-first">
+            <div>Home</div>
+            <div class="count-num">14</div>
+        </div>
+        <div class="flex-first">
+            <div>Notifications</div>
+            <div class="count-num">3</div>
+        </div>
+        <div class="flex-first">
+            <div>Messages</div>
+            <div class="count-num">5</div>
+        </div>
+    </div>
+    <style>
+        .inbox {
+            margin-top:10px;
+            width: 360px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        .inbox-first {
+            margin: 10px;
+        }
+        .box-top {
+            width: 100%;
+            color: gray;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+        .box-bottom {
+            display: flex;
+            flex-direction: row;
+            font-size: 13px;
+            justify-content: flex-start;
+            margin-bottom: 10px;
+        }
+        .box-bottom-left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            width: 50px;
+            height:50px;
+            border-radius: 50%;
+        }
+        .box-bottom-right {
+            margin-left: 10px;
+        }
+        .box-right-top {
+            display: flex;
+            justify-content: space-between;
+        }
+        .box-right-top-title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .box-right-top-time {
+            color: gray;
+        }
+        .box-right-mid-title {
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .box-right-top-message {
+            color: gray;
+        }
+    </style>
+    <div class="inbox">
+        <div class="inbox-first">
+            <div class="box-top">
+                ALL INBOXES
+            </div>
+            <div class="box-bottom">
+                <div class="box-bottom-left">
+                    <img src="https://fakeimg.pl/50x50/">
+                </div>
+                <div class="box-bottom-right">
+                    <div class="box-right-top">
+                        <div class="box-right-top-title">
+                            Chewy Promotions
+                        </div>
+                        <div class="box-right-top-time">
+                            4:58 PM
+                        </div>
+                    </div>
+                    <div class="box-right-mid-title">
+                        Biggest sales of the year!
+                    </div>
+                    <div class="box-right-top-message">
+                        Hey there!We're writing to tell you about our...
+                    </div>
+                </div>
+            </div>
+            <div class="box-bottom">
+                <div class="box-bottom-left">
+                    <img src="https://fakeimg.pl/50x50/">
+                </div>
+                <div class="box-bottom-right">
+                    <div class="box-right-top">
+                        <div class="box-right-top-title">
+                            Chewy Promotions
+                        </div>
+                        <div class="box-right-top-time">
+                            4:58 PM
+                        </div>
+                    </div>
+                    <div class="box-right-mid-title">
+                        Biggest sales of the year!
+                    </div>
+                    <div class="box-right-top-message">
+                        Hey there!We're writing to tell you about our...
+                    </div>
+                </div>
+            </div>
+            <div class="box-bottom">
+                <div class="box-bottom-left">
+                    <img src="https://fakeimg.pl/50x50/">
+                </div>
+                <div class="box-bottom-right">
+                    <div class="box-right-top">
+                        <div class="box-right-top-title">
+                            Chewy Promotions
+                        </div>
+                        <div class="box-right-top-time">
+                            4:58 PM
+                        </div>
+                    </div>
+                    <div class="box-right-mid-title">
+                        Biggest sales of the year!
+                    </div>
+                    <div class="box-right-top-message">
+                        Hey there!We're writing to tell you about our...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
