@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fix</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 3000px;
+        }
+        .left-sidebar {
+            position: fixed;
+            color: white;
+            top:60px;
+            left: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: row;
+        }
+        .left-sidebar-left {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(46, 45, 45);
+            justify-content: top;
+            align-items: center;
+        }
+        .left-sidebar-left div {
+            padding: 15px 10px 5px 10px;
+        }
+        .left-sidebar-left div img {
+            border-radius: 5px;
+        }
+        .left-sidebar-right {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            background-color: rgb(85, 81, 81);
+        }
+        .left-sidebar-right div {
+            display: flex;
+            flex-direction: row;
+            padding: 15px 10px 5px 15px;
+            color: gray;
+        }
+        .left-sidebar-right div:first-child {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10px 5px 15px;
+        }
+        .left-sidebar-right p:first-child {
+            color: white;
+            font-weight: bold;
+        }
+        .left-sidebar-right p:last-child {
+            color: gray;
+            font-size: 30px;
+            margin-right: 10px;
+        }
+        .bottom-right {
+            position: fixed;
+            background-color: black;
+            color: white;
+            bottom: 20px;
+            right: 20px;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid gray;
+        }
+        .header-left {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: 100px;
+        }
+        .header-left img {
+            border-radius: 50%;
+        }
+        .header p {
+            margin-left: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .header-right {
+            margin-right: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .add-friend,.message {
+            height: 40px;
+            border-radius: 3px;
+            border: none;
+            font-weight: bold;
+            width: 100px;
+            font-size: 15px;
+        }
+        .add-friend {
+            margin-right: 10px;
+            background-color: rgb(20, 154, 199);
+            color: white;
+        }
+        .message {
+            background-color:rgb(231, 227, 227);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="https://fakeimg.pl/50x50/?text=World">
+            <p>Oliver Cat</p>
+        </div>
+        <div class="header-right">
+            <button class="add-friend">Add Friend</button>
+            <button class="message">Message</button>
+        </div>
+    </div>
+    <div class="left-sidebar">
+        <div class="left-sidebar-left">
+            <div>
+                <img src="https://fakeimg.pl/50x50/?text=World">
+            </div>
+            <div>
+                <img src="https://fakeimg.pl/50x50/?text=World">
+            </div>
+            <div>
+                <img src="https://fakeimg.pl/50x50/?text=World">
+            </div>
+        </div>
+        <div class="left-sidebar-right">
+            <div>
+                <p>INFO</p>
+                <p>+</p>
+            </div>
+            <div>
+                # new-videos
+            </div>
+            <div>
+                # updates
+            </div>
+            <div>
+                # faq
+            </div>
+        </div>
+    </div>
+    <div class="bottom-right">
+        bottom-right
+    </div>
+</body>
+</html>
