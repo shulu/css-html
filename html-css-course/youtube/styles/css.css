@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 100;
 }
 
 .header img {
@@ -160,57 +161,61 @@
     width: 100%;
     left: 100px;
     top: 72px;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    justify-content: space-between;
-    gap: 10px;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .video-content {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    margin-right: 5px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 400px;
 }
 
-.video-content .video-info {
-    display: flex;
-    flex-direction: row;
-    gap:5px;
+.video-cover {
+    grid-column: 1 / span 5;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
 }
 
-.video-info img {
-    width: 40px;
-    border-radius: 50%;
+.video-avatar {
+    grid-column-start: 1;
+    grid-column-end: span col1-end;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 100%;
 }
 
-.video-info .video-info-title {
-    /* max-width: 10rem; */
-    /* word-wrap: break-word; */
-    font-family: "Roboto","Arial",sans-serif;
-    overflow: hidden;
-    font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    max-height: 4rem;
-    text-overflow: ellipsis;
+.video-title {
+    grid-column-start: 2;
+    grid-column-end: span col2-end;
+    grid-row-start: 2;
+    grid-row-end: span 5;
 }
 
-.video-info .video-info-author, .video-info-views, .video-info-posttime {
-    font-family: "Roboto",
-    "Arial",
-    sans-serif;
-    font-size: 15px;
-    color: gray;
+.video-author {
+    grid-row-start: 3;
+    grid-row-end: span 5;
+    grid-column-start: 2;
+    grid-column-end: span col5-end;
 }
 
-.video-info-last {
-    display: flex;
+.video-views {
+    grid-row-start: 4;
+    grid-column-start: 2;
+    grid-row-end: span 3;
+    grid-column-end: span col5-end;
 }
-
-.video-info-views::after {
-    content: "•";
-    margin: 0 4px;
+.video-posttime {
+    grid-row-start: 4;
+    grid-column-start: 4;
+    grid-row-end: span 3;
+    grid-column-end: span col5-end;
 }
