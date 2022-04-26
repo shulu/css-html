@@ -10,14 +10,13 @@
     width: 100%;
     position: fixed;
     z-index: 100;
-    padding: 0 167px;
-    flex: 1;
 }
 
 .header img {
     height: 60px;
     width: 40px;
 }
+
 
 .header-left,
 .header-middle,
@@ -26,6 +25,11 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    position: relative;
+}
+
+.header-left {
+    padding-left: 167px;
 }
 
 .header-left .logo img {
@@ -44,7 +48,18 @@
 
 .header-left .shop img,
 .header-left .face-captcher img{
-    width: 20px;
+    width: 25px;
+}
+
+.shop p,
+.face-captcher p {
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.shop p:hover,
+.face-captcher p:hover {
+    color: palevioletred;
 }
 
 .header-middle{
@@ -76,5 +91,74 @@
 }
 
 .header-right {
+    padding-right: 167px;
+}
 
+.header-right img{
+    width: 25px;
+    height: 25px;
+}
+
+.header-right-avatar img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.header-right-post {
+    width: 90px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #fd4c5d;
+    background-color: #fd4c5d;
+    border-radius: 5px;
+    color: white;
+    line-height: 33px;
+    position: relative;
+}
+
+.header-right-post img {
+    height: 25px;
+}
+
+.header-right-post p {
+    font-size: 16px;
+    font-weight: 100px;
+    opacity: 0.9;
+}
+
+.header-right-post-tooltips {
+    position: absolute;
+    border: 1px solid lightgray;
+    border-top: none;
+    width: 90px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    line-height: 1.8em;
+    font-weight: 400;
+    margin-top: 2px;
+    opacity: 0;
+}
+
+.header-right-post-tooltips div {
+    margin: 15px 0;
+    opacity: 0.7;
+}
+
+.header-right-post:hover {
+    background-color: #f94052;
+}
+
+.header-right-posts {
+    transition: opacity 1s;
+}
+
+.header-right-posts:hover 
+.header-right-post-tooltips {
+    opacity: 1;
 }
