@@ -1,0 +1,80 @@
+.header {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    font-weight: 400;
+    font-size: 15px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    padding: 0 167px;
+    flex: 1;
+}
+
+.header img {
+    height: 60px;
+    width: 40px;
+}
+
+.header-left,
+.header-middle,
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-left .logo img {
+    width: 96px;
+    height: 50px;
+}
+
+.header-left .shop,
+.header-left .face-captcher {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-left .shop img,
+.header-left .face-captcher img{
+    width: 20px;
+}
+
+.header-middle{
+    height: 40px;
+    width: 400px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    margin: 14px 0;
+}
+
+.header-middle input {
+    border: none;
+    width: 300px;
+    margin-left: 15px;
+}
+
+.header-middle input:focus {
+    outline: none;
+}
+
+.header-middle input::placeholder {
+    font-size: 15px;
+    opacity: 0.4;
+}
+
+.header-middle img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.header-right {
+
+}
