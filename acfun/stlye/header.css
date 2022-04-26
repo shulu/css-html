@@ -1,5 +1,6 @@
 .header {
-    height: 60px;
+    height: 70px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -9,6 +10,9 @@
     font-size: 15px;
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
 }
 
@@ -24,17 +28,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
     position: relative;
+    gap: 20px;
 }
 
 .header-left {
-    padding-left: 167px;
+    padding-left: 5%;
 }
 
 .header-left .logo img {
-    width: 96px;
-    height: 50px;
+    width: 100%;
+    transform: scale(0.8, 0.8);
 }
 
 .header-left .shop,
@@ -63,16 +67,15 @@
 }
 
 .header-middle{
-    height: 40px;
+    height: 45px;
     width: 400px;
     border: 1px solid lightgray;
     border-radius: 20px;
-    margin: 14px 0;
 }
 
 .header-middle input {
     border: none;
-    width: 300px;
+    width: 350px;
     margin-left: 15px;
 }
 
@@ -81,7 +84,8 @@
 }
 
 .header-middle input::placeholder {
-    font-size: 15px;
+    font-size: 16px;
+    width: 100%;
     opacity: 0.4;
 }
 
@@ -90,20 +94,61 @@
     margin-right: 10px;
 }
 
-.header-right {
-    padding-right: 167px;
+.header-right{
+    padding-right: 5%;
+    gap:0;
+}
+
+.header-right div {
+    padding: 0 5px;
+    min-width: 45px;
 }
 
 .header-right img{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 .header-right-avatar img{
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
 }
+
+.header-right-create img{
+    transition: transform 1s;
+}
+
+.header-right-create-tips {
+    transition: opacity 1s bottom 5s;
+}
+
+.header-right-create-tips {
+    position: absolute;
+    margin:0;
+    padding: 0;
+    opacity: 0;
+    bottom: -30px;
+}
+
+.header-right-create:hover
+img {
+    transform: scale(0.8, 0.8);
+}
+
+
+.header-right-create:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-right-create:hover
+.header-right-create-tips {
+    opacity: 1;
+    bottom: 10px;
+}
+
 
 .header-right-post {
     width: 90px;
@@ -162,3 +207,10 @@
 .header-right-post-tooltips {
     opacity: 1;
 }
+
+
+.header-right-post-tooltips div:hover {
+    color: #fd4c5d;
+    font-weight: bold;
+}
+
