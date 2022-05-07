@@ -1,346 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./stlye/style.css">
-    <link rel="stylesheet" href="./stlye/header.css">
-    <link rel="stylesheet" href="./stlye/footer.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stlye/style.css" />
+    <link rel="stylesheet" href="./stlye/header.css" />
+    <link rel="stylesheet" href="./stlye/banner.css" />
+    <link rel="stylesheet" href="./stlye/footer.css" />
     <title>天下漫友是一家</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <div class="header-left">
-            <div class="logo">
-                <img src="./icon/acfunlogo.svg" alt="">
-            </div>
-            <div class="shop">
-                <img src="./icon/storefront.svg" alt="">
-                <p>
-                    周边商城
-                </p>
-            </div>
-            <div class="face-captcher">
-                <img src="./icon/camera.svg" alt="">
-                <p>
-                    AcFun面捕助手
-                </p>
-            </div>
+      <div class="header-left">
+        <div class="logo">
+          <img src="./icon/acfunlogo.svg" alt="" />
         </div>
-        <div class="header-middle">
-            <input type="text" placeholder="【新倩女幽魂】十一周年盛典有奖征稿">
-            <img src="./icon/search_black_24dp.svg" alt="">
+        <div class="shop">
+          <img src="./icon/storefront.svg" alt="" />
+          <p>周边商城</p>
         </div>
-        <div class="header-right">
-            <div class="header-right-qr">
-                <img src="./icon/phone-portrait-outline.svg" alt="">
-                <img class="header-right-qrcode" src="./images/qr-code.png" alt="">
+        <div class="face-captcher">
+          <img src="./icon/camera.svg" alt="" />
+          <p>AcFun面捕助手</p>
+        </div>
+      </div>
+      <div class="header-middle">
+        <input type="text" placeholder="【新倩女幽魂】十一周年盛典有奖征稿" />
+        <img src="./icon/search_black_24dp.svg" alt="" />
+      </div>
+      <div class="header-right">
+        <div class="header-right-qr">
+          <img src="./icon/phone-portrait-outline.svg" alt="" />
+          <img class="header-right-qrcode" src="./images/qr-code.png" alt="" />
+        </div>
+        <div class="header-right-avatar">
+          <img src="./images/avatar.webp" alt="" />
+          <div class="header-right-user">
+            <div class="header-right-user-info">
+              <div>SarcasMe</div>
+              <div>
+                <img src="./icon/power.svg" alt="" />
+                <p>退出</p>
+              </div>
             </div>
-            <div class="header-right-avatar">
-                <img src="./images/avatar.webp" alt="">
-                <div class="header-right-user">
-                    <div class="header-right-user-info">
-                        <div>SarcasMe</div>
-                        <div>
-                            <img src="./icon/power.svg" alt="">
-                            <p>退出</p>
-                        </div>
-                    </div>
-                    <div class="header-right-user-charge">
-                        <div>
-                            <img src="./icon/coin.svg" alt="">
-                            <p>0</p>
-                        </div>
-                        <div>
-                            充值
-                        </div>
-                    </div>
-                    <div class="header-right-user-more">
-                        查看更多
-                    </div>
-                </div>
+            <div class="header-right-user-charge">
+              <div>
+                <img src="./icon/coin.svg" alt="" />
+                <p>0</p>
+              </div>
+              <div>充值</div>
             </div>
-            <div class="header-right-message">
-                <img src="./icon/ellipsis-horizontal-circle.svg" alt="">
-                <div class="header-right-message-tips">
-                    消息
-                </div>
-                <div class="header-right-message-tooltips">
-                    <span>评论</span>
-                    <span>赞</span>
-                    <span>@我的</span>
-                    <span>礼物</span>
-                    <span>站内公告</span>
-                    <span>系统通知</span>
-                    <span>私信</span>
-                </div>
-            </div>
-            <div class="header-right-history">
-                <img id="history-icon" src="./icon/history_FILL0_wght400_GRAD0_opsz48.svg" alt="">
-                <div class="header-right-history-tips">
-                    历史
-                </div>
-                <div class="header-right-history-list">
-                    <div class="history-today">
-                        <p class="history-today-title">
-                            今天
-                        <p/>
-                        <div class="history-list">
-                            <div class="history-content">
-                                <div class="history-content-img">
-                                    <img src="./images/history-video.png" alt="">
-                                </div>
-                                <div class="history-content-detail">
-                                    <p class="history-content-detail-title">中国交通事故20220504: 每天最新的车祸实例，助你提高安全意识
-                                    </p>
-                                    <div class="history-content-detail-view">
-                                        <i class="icon-mobile"></i>
-                                        <p>观看至</p>
-                                        <p>03</p>
-                                        <p>20</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="history-content">
-                                <div class="history-content-img">
-                                    <img src="./images/lob.png" alt="">
-                                </div>
-                                <div class="history-content-detail">
-                                    <p class="history-content-detail-title">油焖小龙虾怎么做才好吃？大厨教你秘制配方技巧，麻辣鲜香真解馋
-                                    </p>
-                                    <div class="history-content-detail-view">
-                                        <i class="icon-pc"></i>
-                                        <p>已看完</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="history-content">
-                                <div class="history-content-img">
-                                    <img src="./images/history-video.png" alt="">
-                                </div>
-                                <div class="history-content-detail">
-                                    <p class="history-content-detail-title">中国交通事故20220504: 每天最新的车祸实例，助你提高安全意识
-                                    </p>
-                                    <div class="history-content-detail-view">
-                                        <i class="icon-mobile"></i>
-                                        <p>观看至</p>
-                                        <p>03</p>
-                                        <p>20</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="history-content">
-                                <div class="history-content-img">
-                                    <img src="./images/lob.png" alt="">
-                                </div>
-                                <div class="history-content-detail">
-                                    <p class="history-content-detail-title">油焖小龙虾怎么做才好吃？大厨教你秘制配方技巧，麻辣鲜香真解馋
-                                    </p>
-                                    <div class="history-content-detail-view">
-                                        <i class="icon-pc"></i>
-                                        <p>已看完</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="history-yesterday">
-                        <p class="history-yesterday-title">昨天</p>
-                        <div class="history-list">
-                            <div class="history-content">
-                                <div class="history-content-img">
-                                    <img src="./images/history-video.png" alt="">
-                                </div>
-                                <div class="history-content-detail">
-                                    <p class="history-content-detail-title">中国交通事故20220504: 每天最新的车祸实例，助你提高安全意识
-                                    </p>
-                                    <div class="history-content-detail-view">
-                                        <i class="icon-mobile"></i>
-                                        <p>观看至</p>
-                                        <p>03</p>
-                                        <p>20</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="history-content">
-                                <div class="history-content-img">
-                                    <img src="./images/lob.png" alt="">
-                                </div>
-                                <div class="history-content-detail">
-                                    <p class="history-content-detail-title">油焖小龙虾怎么做才好吃？大厨教你秘制配方技巧，麻辣鲜香真解馋
-                                    </p>
-                                    <div class="history-content-detail-view">
-                                        <i class="icon-pc"></i>
-                                        <p>已看完</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="history-content">
-                                <div class="history-content-img">
-                                    <img src="./images/history-video.png" alt="">
-                                </div>
-                                <div class="history-content-detail">
-                                    <p class="history-content-detail-title">中国交通事故20220504: 每天最新的车祸实例，助你提高安全意识
-                                    </p>
-                                    <div class="history-content-detail-view">
-                                        <i class="icon-mobile"></i>
-                                        <p>观看至</p>
-                                        <p>03</p>
-                                        <p>20</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="history-content">
-                                <div class="history-content-img">
-                                    <img src="./images/lob.png" alt="">
-                                </div>
-                                <div class="history-content-detail">
-                                    <p class="history-content-detail-title">油焖小龙虾怎么做才好吃？大厨教你秘制配方技巧，麻辣鲜香真解馋
-                                    </p>
-                                    <div class="history-content-detail-view">
-                                        <i class="icon-pc"></i>
-                                        <p>已看完</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-history-show-more">
-                    查看更多
-                </div>
-            </div>
-            <div class="header-right-update">
-                <img class="right-update-icon" src="./icon/update_FILL0_wght400_GRAD0_opsz48.svg" alt="">
-                <div class="header-right-update-tips">
-                    更新
-                </div>
-                <div class="header-right-update-list">
-                    <div class="list-update-content">
-                        <div class="update-content-avatar"><img src="./images/avatar2.png" alt=""></div>
-                        <div class="update-content-detail">
-                            <div class="update-content-detail-info">
-                                <div class="update-detail-info-author">铁菠萝</div>
-                                <div>4分钟前</div>
-                            </div>
-                            <div class="update-content-detail-title">表面正人君子，实则头号毒枭？这部20年前的老剧挺好看！《黑冰》上</div>
-                        </div>
-                        <div class="update-content-preview"><img src="./images/preview1.webp" alt=""></div>
-                    </div>
-                    <div class="list-update-content">
-                        <div class="update-content-avatar"><img src="./images/avatar2.png" alt=""></div>
-                        <div class="update-content-detail">
-                            <div class="update-content-detail-info">
-                                <div class="update-detail-info-author">铁菠萝</div>
-                                <div>4分钟前</div>
-                            </div>
-                            <div class="update-content-detail-title">表面正人君子，实则头号毒枭？这部20年前的老剧挺好看！《黑冰》上</div>
-                        </div>
-                        <div class="update-content-preview"><img src="./images/preview1.webp" alt=""></div>
-                    </div>
-                    <div class="list-update-content">
-                        <div class="update-content-avatar"><img src="./images/avatar2.png" alt=""></div>
-                        <div class="update-content-detail">
-                            <div class="update-content-detail-info">
-                                <div class="update-detail-info-author">铁菠萝</div>
-                                <div>4分钟前</div>
-                            </div>
-                            <div class="update-content-detail-title">表面正人君子，实则头号毒枭？这部20年前的老剧挺好看！《黑冰》上</div>
-                        </div>
-                        <div class="update-content-preview"><img src="./images/preview1.webp" alt=""></div>
-                    </div>
-                </div>
-            </div>
-            <div class="header-right-create">
-                <img src="./icon/emoji_objects_FILL0_wght400_GRAD0_opsz48.svg" alt="">
-                <div class="header-right-create-tips">
-                    创作者
-                </div>
-                <div class="header-right-create-tooltips">
-                    <p>稿件管理</p>
-                    <p>数据中心</p>
-                    <p>互动管理</p>
-                    <p>数据学院</p>
-                </div>
-            </div>
-            <div class="header-right-posts">
-                <div class="header-right-post">
-                    <img src="./icon/acfun-upload.svg" alt="">
-                    <p>
-                        投稿
+            <div class="header-right-user-more">查看更多</div>
+          </div>
+        </div>
+        <div class="header-right-message">
+          <img src="./icon/ellipsis-horizontal-circle.svg" alt="" />
+          <div class="header-right-message-tips">消息</div>
+          <div class="header-right-message-tooltips">
+            <span>评论</span>
+            <span>赞</span>
+            <span>@我的</span>
+            <span>礼物</span>
+            <span>站内公告</span>
+            <span>系统通知</span>
+            <span>私信</span>
+          </div>
+        </div>
+        <div class="header-right-history">
+          <img
+            id="history-icon"
+            src="./icon/history_FILL0_wght400_GRAD0_opsz48.svg"
+            alt=""
+          />
+          <div class="header-right-history-tips">历史</div>
+          <div class="header-right-history-list">
+            <div class="history-today">
+              <p class="history-today-title">今天</p>
+
+              <p />
+              <div class="history-list">
+                <div class="history-content">
+                  <div class="history-content-img">
+                    <img src="./images/history-video.png" alt="" />
+                  </div>
+                  <div class="history-content-detail">
+                    <p class="history-content-detail-title">
+                      中国交通事故20220504: 每天最新的车祸实例，助你提高安全意识
                     </p>
+                    <div class="history-content-detail-view">
+                      <i class="icon-mobile"></i>
+                      <p>观看至</p>
+                      <p>03</p>
+                      <p>20</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="header-right-post-tooltips">
-                    <p>视频投稿</p>
-                    <p>文章投稿</p>
-                    <p>直播开播</p>
+                <div class="history-content">
+                  <div class="history-content-img">
+                    <img src="./images/lob.png" alt="" />
+                  </div>
+                  <div class="history-content-detail">
+                    <p class="history-content-detail-title">
+                      油焖小龙虾怎么做才好吃？大厨教你秘制配方技巧，麻辣鲜香真解馋
+                    </p>
+                    <div class="history-content-detail-view">
+                      <i class="icon-pc"></i>
+                      <p>已看完</p>
+                    </div>
+                  </div>
                 </div>
+                <div class="history-content">
+                  <div class="history-content-img">
+                    <img src="./images/history-video.png" alt="" />
+                  </div>
+                  <div class="history-content-detail">
+                    <p class="history-content-detail-title">
+                      中国交通事故20220504: 每天最新的车祸实例，助你提高安全意识
+                    </p>
+                    <div class="history-content-detail-view">
+                      <i class="icon-mobile"></i>
+                      <p>观看至</p>
+                      <p>03</p>
+                      <p>20</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="history-content">
+                  <div class="history-content-img">
+                    <img src="./images/lob.png" alt="" />
+                  </div>
+                  <div class="history-content-detail">
+                    <p class="history-content-detail-title">
+                      油焖小龙虾怎么做才好吃？大厨教你秘制配方技巧，麻辣鲜香真解馋
+                    </p>
+                    <div class="history-content-detail-view">
+                      <i class="icon-pc"></i>
+                      <p>已看完</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="history-yesterday">
+              <p class="history-yesterday-title">昨天</p>
+              <div class="history-list">
+                <div class="history-content">
+                  <div class="history-content-img">
+                    <img src="./images/history-video.png" alt="" />
+                  </div>
+                  <div class="history-content-detail">
+                    <p class="history-content-detail-title">
+                      中国交通事故20220504: 每天最新的车祸实例，助你提高安全意识
+                    </p>
+                    <div class="history-content-detail-view">
+                      <i class="icon-mobile"></i>
+                      <p>观看至</p>
+                      <p>03</p>
+                      <p>20</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="history-content">
+                  <div class="history-content-img">
+                    <img src="./images/lob.png" alt="" />
+                  </div>
+                  <div class="history-content-detail">
+                    <p class="history-content-detail-title">
+                      油焖小龙虾怎么做才好吃？大厨教你秘制配方技巧，麻辣鲜香真解馋
+                    </p>
+                    <div class="history-content-detail-view">
+                      <i class="icon-pc"></i>
+                      <p>已看完</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="history-content">
+                  <div class="history-content-img">
+                    <img src="./images/history-video.png" alt="" />
+                  </div>
+                  <div class="history-content-detail">
+                    <p class="history-content-detail-title">
+                      中国交通事故20220504: 每天最新的车祸实例，助你提高安全意识
+                    </p>
+                    <div class="history-content-detail-view">
+                      <i class="icon-mobile"></i>
+                      <p>观看至</p>
+                      <p>03</p>
+                      <p>20</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="history-content">
+                  <div class="history-content-img">
+                    <img src="./images/lob.png" alt="" />
+                  </div>
+                  <div class="history-content-detail">
+                    <p class="history-content-detail-title">
+                      油焖小龙虾怎么做才好吃？大厨教你秘制配方技巧，麻辣鲜香真解馋
+                    </p>
+                    <div class="history-content-detail-view">
+                      <i class="icon-pc"></i>
+                      <p>已看完</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-history-show-more">查看更多</div>
         </div>
+        <div class="header-right-update">
+          <img
+            class="right-update-icon"
+            src="./icon/update_FILL0_wght400_GRAD0_opsz48.svg"
+            alt=""
+          />
+          <div class="header-right-update-tips">更新</div>
+          <div class="header-right-update-list">
+            <div class="list-update-content">
+              <div class="update-content-avatar">
+                <img src="./images/avatar2.png" alt="" />
+              </div>
+              <div class="update-content-detail">
+                <div class="update-content-detail-info">
+                  <div class="update-detail-info-author">铁菠萝</div>
+                  <div>4分钟前</div>
+                </div>
+                <div class="update-content-detail-title">
+                  表面正人君子，实则头号毒枭？这部20年前的老剧挺好看！《黑冰》上
+                </div>
+              </div>
+              <div class="update-content-preview">
+                <img src="./images/preview1.webp" alt="" />
+              </div>
+            </div>
+            <div class="list-update-content">
+              <div class="update-content-avatar">
+                <img src="./images/avatar2.png" alt="" />
+              </div>
+              <div class="update-content-detail">
+                <div class="update-content-detail-info">
+                  <div class="update-detail-info-author">铁菠萝</div>
+                  <div>4分钟前</div>
+                </div>
+                <div class="update-content-detail-title">
+                  表面正人君子，实则头号毒枭？这部20年前的老剧挺好看！《黑冰》上
+                </div>
+              </div>
+              <div class="update-content-preview">
+                <img src="./images/preview1.webp" alt="" />
+              </div>
+            </div>
+            <div class="list-update-content">
+              <div class="update-content-avatar">
+                <img src="./images/avatar2.png" alt="" />
+              </div>
+              <div class="update-content-detail">
+                <div class="update-content-detail-info">
+                  <div class="update-detail-info-author">铁菠萝</div>
+                  <div>4分钟前</div>
+                </div>
+                <div class="update-content-detail-title">
+                  表面正人君子，实则头号毒枭？这部20年前的老剧挺好看！《黑冰》上
+                </div>
+              </div>
+              <div class="update-content-preview">
+                <img src="./images/preview1.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-right-create">
+          <img
+            src="./icon/emoji_objects_FILL0_wght400_GRAD0_opsz48.svg"
+            alt=""
+          />
+          <div class="header-right-create-tips">创作者</div>
+          <div class="header-right-create-tooltips">
+            <p>稿件管理</p>
+            <p>数据中心</p>
+            <p>互动管理</p>
+            <p>数据学院</p>
+          </div>
+        </div>
+        <div class="header-right-posts">
+          <div class="header-right-post">
+            <img src="./icon/acfun-upload.svg" alt="" />
+            <p>投稿</p>
+          </div>
+          <div class="header-right-post-tooltips">
+            <p>视频投稿</p>
+            <p>文章投稿</p>
+            <p>直播开播</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="banner">
-
+      <img src="./images/banner.webp" alt="" />
+      <div class="banner-text">2022年春分来，桃柳着装日焕新</div>
     </div>
-    <div class="navigator">
-
-    </div>
-    <div class="site-recommend">
-
-    </div>
-    <div class="monkey-recommend">
-
-    </div>
-    <div class="broadcast">
-
-    </div>
-    <div class="playback">
-
-    </div>
-    <div class="banana-most">
-
-    </div>
-    <div class="anime">
-
-    </div>
-    <div class="game">
-
-    </div>
-    <div class="entertaiment">
-
-    </div>
-    <div class="bangumi">
-
-    </div>
-    <div class="live">
-
-    </div>
-    <div class="technology">
-
-    </div>
-    <div class="dancing">
-
-    </div>
-    <div class="monthly-report">
-
-    </div>
-    <div class="music">
-
-    </div>
-    <div class="movie">
-
-    </div>
-    <div class="fishpond">
-
-    </div>
-    <div class="sports">
-
-    </div>
-    <div class="footer">
-
-    </div>
-</body>
+    <div class="navigator"></div>
+    <div class="site-recommend"></div>
+    <div class="monkey-recommend"></div>
+    <div class="broadcast"></div>
+    <div class="playback"></div>
+    <div class="banana-most"></div>
+    <div class="anime"></div>
+    <div class="game"></div>
+    <div class="entertaiment"></div>
+    <div class="bangumi"></div>
+    <div class="live"></div>
+    <div class="technology"></div>
+    <div class="dancing"></div>
+    <div class="monthly-report"></div>
+    <div class="music"></div>
+    <div class="movie"></div>
+    <div class="fishpond"></div>
+    <div class="sports"></div>
+    <div class="footer"></div>
+  </body>
 </html>

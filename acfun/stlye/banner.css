@@ -1,0 +1,14 @@
+.banner {
+    top: 71px;
+    position: relative;
+    height: 180px;
+}
+
+.banner img {
+    height: 100%;
+    width: 100%;
+}
+
+.banner-text {
+    
+}
