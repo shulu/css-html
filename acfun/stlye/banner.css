@@ -10,5 +10,11 @@
 }
 
 .banner-text {
-    
+    position: absolute;
+    height: 100px;
+    font-size: 16px;
+    border-top: 20px solid transparent;
+    border-right: 40px solid red;
+    border-bottom: 20px solid transparent;
+    left: 100px;
 }
