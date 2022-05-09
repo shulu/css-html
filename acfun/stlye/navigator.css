@@ -1,0 +1,54 @@
+.navigator {
+    position: fixed;
+    top: 250px;
+    height: 60px;
+    width: 100%;
+    background: #f8f8f8;
+    box-shadow: 3px 3px rgba(0, 0, 0, 10%);
+}
+
+.navi {
+    display: flex;
+    padding: 0 7%;
+    line-height: 60px;
+    font-size: 18px;
+    color: #333;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.navi div:hover {
+    color: #fc4c5d;
+}
+
+.site-rank-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.sub-nav {
+    width: 100%;
+    bottom: -54px;
+    position: absolute;
+    height: 50px;
+    background-color: #f8f8f8;
+    border: 1px solid blue;
+    border-top: none;
+}
+
+.sub-nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 8%;
+    color: #333;
+}
+
+.sub-nav li {
+    list-style: none;
+    margin-right: 40px;
+}
+
+.sub-nav li:hover{
+    color: #fc4c5d;
+}
