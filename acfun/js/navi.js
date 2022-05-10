@@ -12,8 +12,14 @@ for (const ul of subNaviUl) {
 }
 let lastOver = 0;
 let subNavShow = false;
+let nowFocus = 0;
 divs.forEach((el, indx) => {
   el.addEventListener("mouseenter", function (e) {
+    if (nowFocus != indx) {
+      divs[lastOver].className = "";
+      el.className = "navi-focus";
+      nowFocus = indx;
+    }
     if (lastOver != indx) {
       uls[lastOver].style.display = "none";
       subNavi.style.display = "none";
