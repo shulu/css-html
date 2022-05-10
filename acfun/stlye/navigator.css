@@ -4,7 +4,7 @@
     height: 60px;
     width: 100%;
     background: #f8f8f8;
-    box-shadow: 3px 3px rgba(0, 0, 0, 10%);
+    box-shadow: 1px 1px rgba(0, 0, 0, 10%);
 }
 
 .navi {
@@ -17,9 +17,9 @@
     flex: 1;
 }
 
-.navi div:hover {
+/* .navi div:hover {
     color: #fc4c5d;
-}
+} */
 
 .site-rank-icon {
     width: 20px;
@@ -32,8 +32,10 @@
     position: absolute;
     height: 50px;
     background-color: #f8f8f8;
-    border: 1px solid blue;
+    border: 1px solid lightgray;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.05);
     border-top: none;
+    display: none;
 }
 
 .sub-nav ul {
@@ -51,4 +53,8 @@
 
 .sub-nav li:hover{
     color: #fc4c5d;
+}
+
+.navi-focus {
+    border-bottom: 3px solid #fc4c5d;
 }

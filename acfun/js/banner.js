@@ -3,7 +3,6 @@ window.onload = function (e) {
       var windowX = window.innerWidth;
       var x = event.clientX;
       var y = event.clientY;
-      console.log(x);
       var banner = document.getElementById("id-banner-float");
       if (y > 70 && y < 250) {
         banner.style.display = "flex";
